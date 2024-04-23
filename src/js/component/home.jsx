@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import honeyDo from "../../img/honeyDo.png";
+import Starbucks from "../../img/Starbucks.png";
 
 //create your first component
 const Home = () => {
@@ -68,7 +69,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    fetch('https://playground.4geeks.com/apis/fake/todos/user/olandstokes')
+    fetch('')
       .then(res => {
         return res.json();
       })
@@ -83,7 +84,7 @@ const Home = () => {
     <div className="container">
       <div className="todoList">
 
-        <h1>todos</h1>
+      <img src={honeyDo} class="" alt="honey-head" />
         <form onSubmit={handleSubmit}>
 
           <input type="text"
@@ -100,6 +101,15 @@ const Home = () => {
               <li
                 key={index}>
                 {task.label}
+               
+    <div class="card">
+	<img src={Starbucks} class="card-img-top" alt="short" />
+      <div class="card-body">
+        <h5 class="card-title">Starbucks gift card</h5>
+        <a href="#" class="btn btn-primary">Purchase</a>
+      </div>
+    </div>
+  
                 <button className="delete-button"
                   onClick={() => handleDeleteTask(index)}>
                   x
