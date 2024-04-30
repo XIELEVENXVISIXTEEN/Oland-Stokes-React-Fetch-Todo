@@ -102,13 +102,7 @@ const Home = () => {
                 key={index}>
                 {task.label}
                
-    <div class="card">
-	<img src={Starbucks} class="card-img-top" alt="short" />
-      <div class="card-body">
-        <h5 class="card-title">Starbucks gift card</h5>
-        <a href="#" class="btn btn-primary">Purchase</a>
-      </div>
-    </div>
+ 
   
                 <button className="delete-button"
                   onClick={() => handleDeleteTask(index)}>

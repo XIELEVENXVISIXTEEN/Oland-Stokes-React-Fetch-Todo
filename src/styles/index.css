@@ -10,6 +10,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@keyframes gradient-loop {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Apply gradient animation to an element */
+ 
 .todoList{
     align-items: center;
     width: 450px;
@@ -22,8 +36,10 @@
     
 }
 .container{
-    background-color: black;
-    padding-left: 300px;
+    background: linear-gradient(45deg, #ff0000, #080808, #ffffff, #ff00e6bf); /* Adjust colors */
+    background-size: 200% 200%;
+    animation: gradient-loop 10s linear infinite;
+    padding-left: 335px;
 }
 
 h1{
